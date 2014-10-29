@@ -2,13 +2,13 @@ mini-twitter-client
 ===================
 
 #Requirements
-*python3
+* python3
 * urllib
 	+ pip install urllib
 * httplib2
 	+ pip install httplib2
 * xmltodict
-  + pip install xmltodict
+ 	+ pip install xmltodict
 * pudb
 	+ pip install pudb
 	
