@@ -195,16 +195,16 @@ class UserCommandSubMenu(SubPrompt):
 		print ("\t Prints the list of users that the current user ia following")
 
 	def help_follow(self):
-		print ("Usage: follow {@usernmae to follow}")
+		print ("Usage: follow {@username to follow}")
 		print ("\t Creates a new folllowee for the current user")
 
 	def help_unfollow(self):
-		print ("Usage: unfollow {@usernmae to unfollow}")
+		print ("Usage: unfollow {@username to unfollow}")
 		print ("\t Deletes the specified folllowee for the current user")
 
 	def help_list(self):
 		print ("Usage: list")
-		print ("\t Prints the list of the current users of the application/")
+		print ("\t Prints the list of the current users of the application")
 
 class TweetCommandSubMenu(SubPrompt):
 	def do_tweet(self, arg):
