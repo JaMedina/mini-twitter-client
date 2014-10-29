@@ -26,9 +26,8 @@ mini-twitter-client
 	- Usage: create {@name} {@username}
 	- Creates an account in the system, Requires your name and username.
 * **users**
-	- Usage: users
-	- Go to the users sub-menu
-	
+	+ Usage: users
+	+ Go to the users sub-menu
 	* **followers**
   	* Usage: followers
   	* Prints the list of users that are following the current user
@@ -46,16 +45,15 @@ mini-twitter-client
   	* Prints the list of the current users of the application
 	
 * **tweets**
-	- Usage: tweets
-	- Go to the tweets sub-menu
-	
+	+ Usage: tweets
+	+ Go to the tweets sub-menu
 	* **tweet**
-  	* Usage: add @message}\"
-  	* adds a new tweet in the user timeline. NOTE @message must be between quotes.
+  	* Usage: add @message}"
+  	* Adds a new tweet in the user timeline. NOTE @message must be between quotes.
   * **timeline**
   	* Usage: timeline {@filter}
   	* hows the user timeline. Pass an extra argunemt to filter tweets (optional)
-  	* NOTE: If you want to search a whole sentence please use \" at the begining and at the end
+  	* NOTE: If you want to search a whole sentence please use " at the begining and at the end
 
 * **quit** | **exit** 
 	- Usage: quit
