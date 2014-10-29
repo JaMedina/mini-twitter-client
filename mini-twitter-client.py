@@ -159,13 +159,13 @@ class UserCommandSubMenu(SubPrompt):
 	def do_followers(self, arg):
 		global TOKEN
 		argumentList = self.getArgumentsList(arg, 0)
-		followers = doGet("rest/follow/"+TOKEN['user']['username'])
+		followers = doGet("rest/follow/")
 		print(followers)
 
 	def do_following(self, arg):
 		global TOKEN
 		argumentList = self.getArgumentsList(arg, 0)
-		following = doGet("rest/followee/"+TOKEN['user']['username'])
+		following = doGet("rest/followee/")
 		print (following)
 
 	def do_follow(self, arg):
@@ -178,7 +178,8 @@ class UserCommandSubMenu(SubPrompt):
 	def do_unfollow(self, arg):
 		global TOKEN
 		argumentList = self.getArgumentsList(arg, 1)
-		result = doDelete('rest/follow/'+TOKEN['user']['username']+'/'+argumentList[0])
+		params = {'followeeUsername': argumentList[0]}
+		result = doDelete('rest/follow/',params)
 		print (result)
 
 	def do_list(self, arg):
@@ -287,7 +288,6 @@ class StartClient(ClientCommand):
     	
 	def do_quit(self, arg):
 		self.do_exit(arg)
-
 
 	def do_users(self, arg):
 		i = UserCommandSubMenu()
